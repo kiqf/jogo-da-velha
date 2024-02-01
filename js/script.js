@@ -123,6 +123,27 @@ function checkWinCondition() {
   } else if (b7Child == "o" && b8Child == "o" && b9Child == "o") {
     console.log("o venceu");
   }
-}
 
 // Vertical
+
+if (b1Child == "x" && b4Child == "x" && b7Child == "x") {
+  console.log("x venceu");
+} else if (b1Child == "o" && b4Child == "o" && b7Child == "o") {
+  console.log("o venceu");
+}
+
+if (
+  b1.childNodes.length > 0 &&
+  b4.childNodes.length > 0 &&
+  b7.childNodes.length > 0
+) {
+  b1Child = b1.childNodes[0].className;
+  b4Child = b4.childNodes[0].className;
+  b7Child = b7.childNodes[0].className;
+}
+if (b1Child == "x" && b4Child == "x" && b7Child == "x") {
+  console.log("x venceu");
+} else if (b1Child == "o" && b4Child == "o" && b7Child == "o") {
+  console.log("o venceu");
+}
+}
